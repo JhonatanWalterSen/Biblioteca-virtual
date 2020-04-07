@@ -1,0 +1,152 @@
+html{
+    box-sizing: border-box;
+    
+}
+/* *{
+    outline: 1px solid red;
+} */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 100vh;
+}
+/* header */
+.header{
+    width: 100%;
+    background-color: #00204A;
+}
+.container-items{
+    background-color: #00204A;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnLogin,
+.btnRegister{
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+form{
+    width: 70%;
+    position: relative;
+}
+form input[type="text"]{
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding-left: 15px;
+    color: #fff;
+}
+form input[type="submit"]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../imagenes/icono-lupa-plomo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    text-indent: -9999px;
+    background-color: transparent;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+form input[type="submit"]:hover{
+    background-image: url(../imagenes/icono-lupa.png);
+    background-color: transparent;
+}
+
+.header .searchInput{
+    border-bottom: 3px solid gray;
+}
+.header .searchInput:hover{
+    border-bottom: 3px solid white;
+    transition: all .3s ease-in-out;
+    color: #fff;
+}
+.btnLogin{
+    background-color: #3686E6;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 30px;
+    transition: all .3s ease-in-out;
+}
+.btnLogin:hover{
+    color: #3686E6;
+    background-color: #fff;
+}
+
+.btnRegister{
+    border-radius: 20px;
+    background-color: #3ACACE;
+    color: #fff;
+    padding: 10px 30px;
+    transition: all .3s ease-in-out;
+}
+.btnRegister:hover{
+    color: #3ACACE;
+    background-color: #fff;
+}
+
+.logo{
+    flex: .5;
+    text-align: center;
+}
+.search{
+    flex: 1;
+    text-align: center;
+}
+.botons{
+    display: flex;
+    flex: .7;
+    justify-content: space-around;
+}
+.menuMobile{
+    display: none;
+}
+@media screen and (max-width:950px){ 
+    .btnLogin {
+        padding: 10px 20px;
+    }
+    .btnRegister{
+        padding: 10px 20px;
+    }
+}
+/* 768 mobile del header */
+
+
+@media screen and (max-width:768px){
+    .menuMobile{
+        display: block;
+    }
+    .botons{
+        flex: .3;
+    }
+    .btnRegister,
+    .btnLogin{
+        display: none;
+    }
+}
