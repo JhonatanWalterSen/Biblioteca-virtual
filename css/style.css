@@ -26,6 +26,9 @@ body{
 .header{
     width: 100%;
     background-color: #00204A;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 .container-items{
     background-color: #00204A;
@@ -127,6 +130,16 @@ form input[type="submit"]:hover{
 .menuMobile{
     display: none;
 }
+.btnsearch{
+    display: none;
+}
+/* carrusel */
+.slider{
+    padding-top: 120px;
+}
+
+/* DETALLES */
+
 @media screen and (max-width:950px){ 
     .btnLogin {
         padding: 10px 20px;
@@ -135,12 +148,22 @@ form input[type="submit"]:hover{
         padding: 10px 20px;
     }
 }
+@media screen and (max-width:825px){ 
+    .btnLogin {
+        padding: 10px 15px;
+    }
+    .btnRegister{
+        padding: 10px 15px;
+    }
+}
+
 /* 768 mobile del header */
 
 
 @media screen and (max-width:768px){
     .menuMobile{
         display: block;
+        width: 50px;
     }
     .botons{
         flex: .3;
@@ -148,5 +171,39 @@ form input[type="submit"]:hover{
     .btnRegister,
     .btnLogin{
         display: none;
+    }
+    form{
+        width: 100%;
+        height: 50px;
+    }
+    form input[type="submit"],
+    form input[type="text"]{
+        display: none;
+    }
+    .btnsearch{
+        position: absolute;
+        display: block;
+        right: 0;
+    }
+}
+/* 416 telf  */
+@media screen and (max-width:416px){
+    .container-items {
+        padding: 0px;
+    }
+    form{
+        height: 30px;
+    }
+    .menuMobile {
+        width: 30px;
+    }
+    .btnsearch {
+        width: 30px;
+    }
+    .logoJA{
+        width: 100px;
+    }
+    .slider {
+        padding-top: 100px;
     }
 }
