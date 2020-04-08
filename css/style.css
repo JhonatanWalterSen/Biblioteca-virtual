@@ -1,5 +1,6 @@
 :root{
     --roboto:'Roboto', sans-serif;
+    --lato:'Lato', sans-serif;
 }
 html{
     box-sizing: border-box;  
@@ -25,7 +26,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    height: 100vh;
 }
 /* header */
 .header{
@@ -46,7 +46,9 @@ body{
 }
 
 .btnLogin,
-.btnRegister{
+.btnRegister,
+.btnCategory,
+.bottonSee{
     outline: none;
     border: none;
     text-decoration: none;
@@ -170,6 +172,7 @@ form input[type="submit"]:hover{
     height: 90%;
     margin: auto;
 }
+
 .bottonSee{
     font-size: 16px;
     font-family: var(--roboto);
@@ -177,13 +180,11 @@ form input[type="submit"]:hover{
     color: #7D7D7D;
     background-color: #fff;
     border-radius: 15px;
-    text-decoration: none;
-    outline: none;
     padding: 7px 43px;
     transition: all .3s ease-in-out;
 }
 .bottonSee:hover{
-    color: #fff;
+    color: #fff ;
     background-color: #7D7D7D;
 }
 
@@ -217,6 +218,37 @@ form input[type="submit"]:hover{
     line-height: 1.8;
     text-align: left;
 }
+
+/* Categorias */
+.category .container h1{
+    font-family: var(--lato);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.bottons-category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bottons-category .btnCategory{
+    flex: 1 0 calc(20% - 10px);
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--roboto);
+    font-weight: bold;
+    color: #7D7D7D;
+    background-color: red;
+    border-radius: 20px;
+    padding: 7px 43px;
+    transition: all .3s ease-in-out;
+
+    
+}
+.btnCategory:hover{
+        color: #fff ;
+        background-color: #7D7D7D;
+    }
 /* DETALLES */
 
 @media screen and (max-width:950px){ 
