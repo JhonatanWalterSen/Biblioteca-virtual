@@ -1,10 +1,12 @@
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
+    slidesPerView: 2,
+    centeredSlides: true,
+    initialSlide:1,
     direction: getDirection(),
     breakpoints: {
-      420:{
-            slidesPerView: 2,
-            spaceBetween: 20
+      766:{
+        centeredSlides: false,
+            slidesPerView: 3,
           }
     },
     
