@@ -5,7 +5,8 @@ var swiper = new Swiper('.swiper-container', {
     direction: getDirection(),
     breakpoints: {
       766:{
-        centeredSlides: false,
+            centeredSlides: false,
+            initialSlide: 0, 
             slidesPerView: 3,
           }
     },

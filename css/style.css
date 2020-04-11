@@ -374,6 +374,7 @@ form input[type="submit"]:hover{
     }
     .title {
         font-size: 22px;
+    }
 }
 
 @media screen and (max-width:950px){ 
@@ -384,6 +385,7 @@ form input[type="submit"]:hover{
         padding: 10px 20px;
     }
 }
+
 @media screen and (max-width:900px){
     .card {
         flex: 0 0 25%;
@@ -444,6 +446,32 @@ form input[type="submit"]:hover{
         right: 0;
     }
 }
+/* Nexus 7 */
+@media screen and (max-width:700px){
+    .bottons-category .btnCategory {
+        flex: 0 0 45%;
+    }
+    .menuMobile {
+        width: 40px;
+    }
+    .card {
+        flex: 0 0 33.3%;
+    }
+    .btnsearch {
+        height: 30px;
+    }
+    form {
+        height: 25px;
+    }
+
+}
+
+/* 550 */
+@media screen and (max-width:550px){
+    .card {
+        flex: 0 0 50%;
+    }
+}
 /* 416 telf  */
 @media screen and (max-width:416px){
     .container-items {
@@ -464,15 +492,71 @@ form input[type="submit"]:hover{
     .slider {
         padding-top: 100px;
     }
+    .swiper-container {
+        padding-top: 75px !important;
+    }
+    .bg1, .bg2, .bg3 {
+        height: 250px;
+    }
+    .footer{
+        display: none;
+    }
 }
+/* 375 */
+@media screen and (max-width:375px){
+    .bottons-category .btnCategory {
+        flex: 0 0 calc(50% - 2rem);
+        padding: 10px 20px;
+    }
+}
+/* 360 */
+@media screen and (max-width:360px){
+    .bg1, .bg2, .bg3 {
+        height: 235px;
+    }
+    .bottons-category .btnCategory {
+        padding: 10px 10px;
+    }
+}
+/* 320 */
+@media screen and (max-width:320px){
+    .bg1, .bg2, .bg3 {
+        height: 200px;
+    }
+    .imgCard {
+        width: 90%;
+    }
+    .card {
+        flex: 0 0 50%;
+        padding: 5px;
+    }
+    .bottons-category .btnCategory {
+        padding: 10px 5px;
+    }
+    .menuMobile {
+        width: 25px;
+    }
+    .btnsearch {
+        width: 20px;
+        height: 20px;
+    }
+    .logoJA {
+        width: 70px;
+    }
+    .swiper-container {
+        padding-top: 50px !important;
+    }
+}
+
+
 
 
 /*  */
 .swiper-container {
     width: 100%;
     height: 100%;
-  }
-  .swiper-slide {
+}
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -490,9 +574,9 @@ form input[type="submit"]:hover{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+}
 
-  @media (max-width: 760px) {
+@media (max-width: 760px) {
     .swiper-button-next {
       right: 20px;
       transform: rotate(90deg);
@@ -502,4 +586,4 @@ form input[type="submit"]:hover{
       left: 20px;
       transform: rotate(90deg);
     }
-  }
+}
