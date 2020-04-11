@@ -502,8 +502,9 @@ form input[type="submit"]:hover{
         display: none;
     }
 }
+
 /* 375 */
-@media screen and (max-width:375px){
+@media screen and (max-width:400px){
     .bottons-category .btnCategory {
         flex: 0 0 calc(50% - 2rem);
         padding: 10px 20px;
