@@ -48,7 +48,8 @@ body{
 .btnLogin,
 .btnRegister,
 .btnCategory,
-.bottonSee{
+.bottonSee,
+.btnBuy{
     outline: none;
     border: none;
     text-decoration: none;
@@ -501,6 +502,8 @@ form input[type="submit"]:hover{
     .footer{
         display: none;
     }
+    
+
 }
 
 /* 400 */
@@ -601,7 +604,8 @@ form input[type="submit"]:hover{
 		height:100%;
 		left:-100%;
 		margin:0;
-		position: fixed;
+        position: fixed;
+        
     }
     .activo{
         transition: left .25s ease-in-out;
@@ -624,6 +628,16 @@ form input[type="submit"]:hover{
         font-weight: bold;
         text-decoration: none;
         padding: 5px 0;
+    }
+}
+@media screen and (max-width:416px){
+    .activo{
+        margin-top: 73px; 
+    }
+}
+@media screen and (max-width:320px){
+    .activo{
+        margin-top: 46px; 
     }
 }
 

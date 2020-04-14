@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    margin-top: 120px;
+    padding-top: 120px;
 }
 .container-book .container{
     background-color: transparent;
@@ -38,4 +38,133 @@
 }
 .stars-book{
     max-width: 130px;
+}
+.space-buy{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    align-items: center;
+}
+.space-buy p{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 20px;
+}
+.space-buy p::before{
+    content: 'S/ ';
+}
+
+.btnBuy{
+    background-color: #3686E6;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-right: 20px;
+}
+
+
+.buy{
+    display: none;
+}
+.content-buy {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+.content-buy p{
+    font-size:20px;
+    color: #111;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 15px;
+
+}
+.content-buy a{
+    position: relative;
+    padding: 15px 30px;
+    border: 2px solid #3686E6;
+    color: #3686E6;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:20px;
+    margin-left: 15px;
+
+}
+.content-buy a::before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    height: calc(100% - 12px);
+    width: calc(100% + 4px);
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+
+.content-buy a:hover::before{
+    transform: scaleY(0);
+}
+
+/* after */
+.content-buy a::after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+.content-buy a:hover::after{
+    transform: scaleX(0);
+}
+
+.content-buy a span{
+    position: relative;
+    z-index: 3;
+
+}
+
+@media screen and (max-width:1024px){
+    .details-book {
+        padding-right: 35px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .desc-book{
+    max-height: 300px;
+    overflow: hidden;
+    }
+}
+@media screen and (max-width:709px){
+    .infoGeneral {
+        flex-direction: column;
+    }
+    .container-book {
+        background-size: auto;
+    }
+    .photo-book {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 15px;
+    }
+    .details-book {
+        padding-top: 10px;
+        padding-right: 0;
+        padding-left: 0;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .desc-book {
+        overflow: auto;
+    }
 }
