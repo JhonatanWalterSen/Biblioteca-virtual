@@ -1,5 +1,14 @@
+.container-book.book3{
+    background-image: url(../imagenes/Transparente3.png);
+}
+.container-book.book2{
+    background-image: url(../imagenes/Transparente2.png);
+}
 .container-book{
     background-image: url(../imagenes/Transparente.png);
+}
+.container-book .book2,
+.container-book{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
